@@ -1,0 +1,18 @@
+# Single shared environment for all project stages (MLP / CNN / RNN / GNN code later).
+# Install: python3 -m venv .venv && source .venv/bin/activate && pip install -U pip && pip install -r requirements.txt
+#
+# PyTorch: pick CPU vs CUDA from https://pytorch.org/get-started/locally/ if you need GPU;
+# this file uses standard PyPI wheels (often CPU on macOS; CUDA on Linux if you install the matching index).
+
+torch>=2.2.0
+torchvision>=0.17.0
+numpy>=1.26.0
+scikit-learn>=1.4.0
+matplotlib>=3.8.0
+pandas>=2.1.0
+tqdm>=4.66.0
+
+# Stage 5 (GNN): install when you reach it — versions must match your torch/CUDA build.
+# See https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html
+# torch-geometric
+# torch-scatter torch-sparse torch-cluster torch-spline-conv -f https://data.pyg.org/whl/torch-${TORCH}+${CUDA}.html

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+__MACOSX/
+
+# Data (large; keep zip or regenerate from instructor)
+data/**/*.csv
+data/**/*.npy
+data/**/*.npz
+!data/**/.gitkeep
+
+# Checkpoints / runs
+*.pt
+*.pth
+*.ckpt
+wandb/
