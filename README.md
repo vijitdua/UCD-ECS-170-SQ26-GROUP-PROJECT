@@ -19,7 +19,6 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -U pip
 pip install -r requirements.txt
-python scripts/verify_env.py
 ```
 
 **GPU / CUDA:** if you need a specific PyTorch+CUDA build, install `torch` / `torchvision` from the selector at [pytorch.org](https://pytorch.org/get-started/locally/) instead of the defaults pulled by `requirements.txt`.
