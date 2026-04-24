@@ -52,15 +52,28 @@ pip install -r requirements.txt
 
 ---
 
-## Running Stage 1
+## Running scripts from the terminal (Stage 1 and the same template pattern)
 
-From the repo root, activate the venv, then:
+The course template does two things that matter when you use **`python`** from a shell (PyCharm often hides this by configuring the project for you):
+
+1. **Imports** — Scripts use packages such as `code.stage_1_code`. Python must see the **repository root** (the directory that contains the `code/` folder) on `PYTHONPATH`. If it does not, you may get `ModuleNotFoundError` or `'code' is not a package` because the standard library also exposes a top-level module named `code`.
+
+2. **Data and result paths** — Scripts pass relative paths like `../../data/stage_1_data/...` and `../../result/stage_1_result/...`. Those are resolved from the process **current working directory** (where you ran the command), not from the script file’s folder. So your shell **cwd must be** `script/stage_1_script/` (two levels below the repo root), or those paths will point outside the project and you will see `FileNotFoundError`.
+
+In particular, running `PYTHONPATH=. python script/stage_1_script/script_svm.py` **from the repo root** fixes imports but **breaks** the `../../...` file paths, because from the repo root `../..` goes above the repository.
+
+**Recommended commands** (repo root → venv → stage folder, then run with `PYTHONPATH` pointing at the repo root):
 
 ```bash
+cd /path/to/UCD-ECS-170-SQ26-GROUP-PROJECT
+source .venv/bin/activate
 cd script/stage_1_script
-python script_decision_tree.py   # example
-python script_mlp.py
-python script_svm.py
+PYTHONPATH=../.. python script_decision_tree.py   # example
+PYTHONPATH=../.. python script_mlp.py
+PYTHONPATH=../.. python script_svm.py
+PYTHONPATH=../.. python script_load_result.py
 ```
 
-Outputs are written under `result/stage_1_result/` when the template runs successfully.
+You can instead `export PYTHONPATH=/path/to/UCD-ECS-170-SQ26-GROUP-PROJECT` once per shell, then use plain `python script_svm.py` after `cd script/stage_1_script`.
+
+Outputs are written under `result/stage_1_result/` when the template runs successfully. Later stages that reuse the same `from code.stage_N_code...` and `../../data/...` layout need the same **repo root on `PYTHONPATH`** and **cwd in the matching `script/stage_N_script/`** unless you change those paths in code.
