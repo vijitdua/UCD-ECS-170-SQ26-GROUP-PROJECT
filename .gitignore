@@ -24,14 +24,6 @@ ENV/
 
 __MACOSX/
 
-# Data (large; keep zip or regenerate from instructor)
-data/**/*.csv
-data/**/*.npy
-data/**/*.npz
-!data/**/.gitkeep
-
-# Checkpoints / runs
-*.pt
-*.pth
-*.ckpt
-wandb/
+# Stage 2 MNIST-style CSVs — not in Git: `train.csv` is > GitHub’s 100 MB per-file limit.
+# Clone this repo, then add `train.csv` and `test.csv` locally (see data/stage_2_data/README.md).
+data/stage_2_data/*.csv

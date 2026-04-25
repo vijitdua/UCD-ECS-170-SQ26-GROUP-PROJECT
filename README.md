@@ -28,6 +28,8 @@ This repo follows the **course code template**: shared abstractions under `code/
 
 Empty stage folders that must stay in git use a `.gitkeep` file so Git tracks the directory.
 
+**Stage 2 data:** `data/stage_2_data/train.csv` and `test.csv` are **not** in this repository (the training file exceeds GitHub’s file size cap). After cloning, copy them in from the **course** and read **[data/stage_2_data/README.md](data/stage_2_data/README.md)** for the full steps and for what to do if you accidentally committed the CSVs.
+
 ---
 
 ## Course project overview (instructor handout)
@@ -77,3 +79,5 @@ PYTHONPATH=../.. python script_load_result.py
 You can instead `export PYTHONPATH=/path/to/UCD-ECS-170-SQ26-GROUP-PROJECT` once per shell, then use plain `python script_svm.py` after `cd script/stage_1_script`.
 
 Outputs are written under `result/stage_1_result/` when the template runs successfully. Later stages that reuse the same `from code.stage_N_code...` and `../../data/...` layout need the same **repo root on `PYTHONPATH`** and **cwd in the matching `script/stage_N_script/`** unless you change those paths in code.
+
+**Stage 2 (MLP on pre-partitioned MNIST-style CSVs):** `cd script/stage_2_script` with the same `PYTHONPATH=../..` pattern, then e.g. `python script_mlp.py` (baseline) or `python script_mlp.py --preset hidden_128` (ablation). **Details, preset table, and output locations** for the report are in [script/stage_2_script/README.md](script/stage_2_script/README.md).
