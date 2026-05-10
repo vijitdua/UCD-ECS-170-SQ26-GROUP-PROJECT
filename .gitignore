@@ -27,3 +27,8 @@ __MACOSX/
 # Stage 2 MNIST-style CSVs — not in Git: `train.csv` is > GitHub’s 100 MB per-file limit.
 # Clone this repo, then add `train.csv` and `test.csv` locally (see data/stage_2_data/README.md).
 data/stage_2_data/*.csv
+
+# Stage 3 — large dataset blobs only; keep `script_data_loader.py` and ReadMe files in Git.
+data/stage_3_data/MNIST
+data/stage_3_data/CIFAR
+data/stage_3_data/ORL
