@@ -1,5 +1,7 @@
 # Instructor materials — course project overview
 
+<https://docs.google.com/document/d/1sAEs6Rv2ZBE4w0MyJrvBBdEjpqAzEDJS/edit#heading=h.gjdgxs>
+
 The text below is preserved from the course project handout in google docs, converted to markdown cuz im too lazy to keep switching from my code editor to the google doc
 
 ---
@@ -18,7 +20,7 @@ There is a quarter-long course project of building deep learning models for vari
 
 ## Stage 1: Group formation and environment setup
 
-*(Code template, report template)*
+([Code template](https://drive.google.com/file/d/1qkI0mF1wwxs3_GZKU8SwuhejueutZqqG/view?usp=sharing), [Report template](https://docs.google.com/document/d/1lpZ597xf-E_GntjBtSCEyo5FQb65_NrcDrOMkYyl_TI/edit?usp=sharing))
 
 You need to find teammates to form a group with **four students** (more than four is not allowed). Create a cool name for your group. Submit a report to Canvas that includes your team name, student names, student IDs, and emails. Only one submission will be needed for each team, and the TA will help tie the group members up throughout the semester. You can either elect a team leader to do the submission, or you can take turns to take the responsibility for submissions for each stage. If one happens to leave/drop the class, the others should be on your own. So choose your groupmates carefully!
 
@@ -50,7 +52,7 @@ You need to find teammates to form a group with **four students** (more than fou
 
 ## Stage 2: Data classification with MLP (PyTorch)
 
-*(Dataset, report template)*
+([Dataset](https://drive.google.com/file/d/1WG0NV7JTcDmpcEB-GRf-qecyWTisFYM-/view?usp=sharing), [Report template](https://docs.google.com/document/d/1fLUhtUe_Rm4x-sL4N-LxBJ57k0enaCEnQNvWwTUkNY0/edit?usp=sharing))
 
 This stage aims to help students get familiar with **PyTorch** and **scikit-learn (sklearn)**. Please write your first program with PyTorch to implement the MLP model introduced in class.
 
@@ -70,7 +72,7 @@ This stage aims to help students get familiar with **PyTorch** and **scikit-lear
 
 ## Stage 3: Image classification with CNN
 
-*(Dataset, report template)*
+([Dataset](https://drive.google.com/file/d/1-udd9jkldM1gEQ-OO-9HKXds42AiLOL6/view?usp=sharing), [Report template](https://docs.google.com/document/d/1fLUhtUe_Rm4x-sL4N-LxBJ57k0enaCEnQNvWwTUkNY0/edit?usp=sharing))
 
 This stage introduces **convolutional neural networks (CNNs)** for object recognition on image data.
 
@@ -92,7 +94,7 @@ This stage introduces **convolutional neural networks (CNNs)** for object recogn
 
 ## Stage 4: Text classification and generation with RNN
 
-*(Dataset, report template)*
+([Dataset](https://drive.google.com/file/d/1yNr8deq1JO-HNhlAa1yV4Zycjqmr1Hfz/view?usp=sharing), [Report template](https://docs.google.com/document/d/1fLUhtUe_Rm4x-sL4N-LxBJ57k0enaCEnQNvWwTUkNY0/edit?usp=sharing))
 
 This stage introduces **recurrent neural networks (RNNs)** for text classification and generation.
 
@@ -114,7 +116,7 @@ This stage introduces **recurrent neural networks (RNNs)** for text classificati
 
 ## Stage 5: Graph embedding and node classification with GNN
 
-*(Dataset, `Dataset_Loader`, report template)*
+([Dataset](https://drive.google.com/file/d/1L_MolRhZczh8eECQuTzABMXlVkyxl-yJ/view?usp=sharing), [Dataset loader](https://drive.google.com/file/d/1Lfgnj6JtIab2dbbkw9E-EoXmcRp1kU5o/view?usp=sharing), [Report template](https://docs.google.com/document/d/1fLUhtUe_Rm4x-sL4N-LxBJ57k0enaCEnQNvWwTUkNY0/edit?usp=sharing))
 
 This stage introduces **graph neural networks (GNNs)** for embedding and node classification.
 
