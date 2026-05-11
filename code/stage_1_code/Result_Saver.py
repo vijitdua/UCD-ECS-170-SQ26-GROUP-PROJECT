@@ -16,7 +16,7 @@ class Result_Saver(result):
     result_destination_file_name = None
     
     def save(self):
-        print('saving results...')
+        print('saving results...', flush=True)
         f = open(self.result_destination_folder_path + self.result_destination_file_name + '_' + str(self.fold_count), 'wb')
         pickle.dump(self.data, f)
         f.close()
